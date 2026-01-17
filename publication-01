@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publication Title | Footnoted</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+<header class="border-b sticky top-0 bg-white z-50 px-6 py-5">
+  <a href="publications.html" class="text-sm uppercase tracking-wide">← All Publications</a>
+  <nav class="mt-2 space-x-6 text-sm font-medium">
+    <a href="publications.html">Publications</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main class="max-w-5xl mx-auto px-6 py-12">
+  <!-- Hero image -->
+  <img src="PUBLICATION_IMAGE_URL" alt="Publication Title" class="w-full rounded-lg mb-8" />
+
+  <!-- Title and metadata -->
+  <h1 class="text-4xl font-semibold mb-2">Publication Title</h1>
+  <p class="text-gray-600 text-sm mb-6">January 18, 2026 — Analysis / Commentary</p>
+
+  <!-- Article content -->
+  <article class="prose prose-lg text-gray-800">
+    <p>Your full article text goes here. You can break it up into multiple paragraphs.</p>
+    <p>Continue your publication content here, formatted as natural editorial text.</p>
+  </article>
+</main>
+
+</body>
+</html>
