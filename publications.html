@@ -4,44 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Publications | Footnoted</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-900">
 
-<header class="border-b sticky top-0 bg-white z-50 px-6 py-5">
-  <a href="index.html" class="text-2xl font-semibold">Footnoted</a>
-  <nav class="space-x-6 text-sm font-medium">
-    <a href="podcast.html">Podcast</a>
-    <a href="publications.html">Publications</a>
-    <a href="about.html">About</a>
-  </nav>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: improve typography -->
+  <style>
+    body {
+      font-feature-settings: "liga" 1, "kern" 1;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f8fafc] text-[#0f172a]">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white border-b sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <a href="index.html" class="text-2xl font-semibold tracking-tight">
+      Footnoted
+    </a>
+
+    <nav class="space-x-8 text-sm font-medium">
+      <a href="podcast.html" class="hover:text-blue-600">Podcast</a>
+      <a href="publications.html" class="text-blue-600">Publications</a>
+      <a href="about.html" class="hover:text-blue-600">About</a>
+    </nav>
+  </div>
 </header>
 
-<main class="max-w-5xl mx-auto px-6 py-12">
-  <h1 class="text-4xl font-light mb-8">Publications</h1>
-  <div class="space-y-8">
-    
-    <!-- Example publication -->
-    <article class="border-b pb-6">
-      <a href="publication-01.html" class="text-2xl font-semibold text-blue-700 hover:underline">
-        Why Footnotes Matter More Than Headlines
-      </a>
-      <p class="text-gray-600 text-sm mt-1">Footnoted — January 18, 2026</p>
-      <p class="text-gray-700 mt-2">A deep dive into why context and nuance are more important than headlines alone.</p>
-    </article>
+<!-- ================= MAIN ================= -->
+<main class="max-w-7xl mx-auto px-6 py-14">
 
-    <article class="border-b pb-6">
-      <a href="publication-02.html" class="text-2xl font-semibold text-blue-700 hover:underline">
-        Slow Media in a Fast World
-      </a>
-      <p class="text-gray-600 text-sm mt-1">Footnoted — January 10, 2026</p>
-      <p class="text-gray-700 mt-2">Exploring the value of slowing down in media consumption and production.</p>
-    </article>
-
-    <!-- Add more publications the same way -->
-    
+  <!-- Page title -->
+  <div class="mb-12">
+    <h1 class="text-4xl font-light mb-4">Publications</h1>
+    <p class="text-slate-600 max-w-2xl">
+      Essays, commentary, and long-form analysis from Footnoted — focused on context,
+      nuance, and thoughtful storytelling.
+    </p>
   </div>
+
+  <!-- ================= PUBLICATION GRID ================= -->
+  <section class="grid md:grid-cols-2 gap-10">
+
+    <!-- Publication Card -->
+    <article class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+      <div class="flex items-center gap-3 text-xs uppercase tracking-wide mb-3">
+        <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
+          Essay
+        </span>
+        <span class="text-slate-500">January 18, 2026</span>
+      </div>
+
+      <h2 class="text-2xl font-semibold leading-snug">
+        <a href="publication-01.html" class="hover:text-blue-600">
+          Why Footnotes Matter More Than Headlines
+        </a>
+      </h2>
+
+      <p class="mt-3 text-slate-700">
+        A reflection on context, nuance, and why the most important information
+        is often found beneath the surface.
+      </p>
+    </article>
+
+    <!-- Publication Card -->
+    <article class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+      <div class="flex items-center gap-3 text-xs uppercase tracking-wide mb-3">
+        <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full">
+          Analysis
+        </span>
+        <span class="text-slate-500">January 10, 2026</span>
+      </div>
+
+      <h2 class="text-2xl font-semibold leading-snug">
+        <a href="publication-02.html" class="hover:text-blue-600">
+          Slow Media in a Fast World
+        </a>
+      </h2>
+
+      <p class="mt-3 text-slate-700">
+        Exploring intentional publishing, attention economics, and the value
+        of slowing down how we consume media.
+      </p>
+    </article>
+
+    <!-- Duplicate cards below for more publications -->
+
+  </section>
 </main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t mt-20">
+  <div class="max-w-7xl mx-auto px-6 py-10 text-sm text-slate-500 flex justify-between">
+    <span>© Footnoted</span>
+    <span>Independent media & commentary</span>
+  </div>
+</footer>
 
 </body>
 </html>
